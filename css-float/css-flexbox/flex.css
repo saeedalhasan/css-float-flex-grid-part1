@@ -1,0 +1,51 @@
+.item{
+    border: 1px solid black;
+    height: 200px;
+    /* min-width: 200px; */
+    width: 200px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.one, .three, .five{
+    background-color: greenyellow;
+}
+.two, .four, .six{
+    background-color: tomato;
+}
+.container{
+    display: flex;
+    /* flex-direction: row;  default value */
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap;   by default */
+    /* flex-wrap: wrap-reverse; */
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    /* align-content: space-between; */
+}
+
+/* item properties */
+
+.one{
+    /* order: 1; */
+    /* flex-basis: 50px;  */
+
+}
+.three{
+    /* order: 2; */
+    /* flex-basis: 100px; */
+}
+.five{
+    /* order:2; */
+    /* flex-basis: 25px; */
+} 
+.item{
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+    /* flex-basis: 200px; */
+    /* flex-grow: 1; */
+
+    flex: 0 1 150px;
+    
+}
